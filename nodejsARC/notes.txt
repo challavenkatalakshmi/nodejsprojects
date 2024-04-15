@@ -1,0 +1,8 @@
+const parsedUrlQuery=url.parse(queryStr,true);
+
+console.log(parsedUrlQuery.query);
+
+const searchParams=new URLSearchParams(parsedUrlQuery.query);
+
+console.log(searchParams.get("query"));
+console.log(searchParams.get("id"));

@@ -1,0 +1,13 @@
+npm install express dotenv cookie-parser bcryptjs mongoose socket.io jsonwebtoken
+npm install nodemon --save-dev
+
+--> Environment variable:-
+    npm install dotenv
+    
+    const dotenv=require('dotenv')
+    dotenv.config()
+
+    const PORT=process.env.PORT || some default value
+
+-->To use import statements
+    "type":"module"

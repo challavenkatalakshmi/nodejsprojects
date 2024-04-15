@@ -1,0 +1,31 @@
+>npm i expresss mongoose connect-mongo express-session express-handlebars dotenv method-override moment morgan passport passport-google-oauth20
+
+>npm i -D nodemon cross-env
+
+==>In package.json:-
+
+"start":"cross-env NODE_ENV=production node app",
+"dev":"cross-env NODE_ENV=development nodemon app"
+
+==>In config/config.env:-
+
+PORT=3000
+MONGO_URI=mongodb://localhost:27017
+
+==>In app.js:-
+
+const express=require('express')
+const dotenv=require('dotenv')
+
+//Load config 
+
+dotenv.config({path:'./config/config.env'})
+
+const app=express()
+
+const PORT=process.env.PORT || 5000
+
+app.listen(
+    PORT,
+    console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
+)

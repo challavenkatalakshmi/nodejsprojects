@@ -1,0 +1,11 @@
+>npm init
+>npm i express mongoose
+
+-->Mongoose allows us to interact with Mongodb very easily.
+-->Express is very useful for only we want to an application using Nodejs.
+    Beacause it is very useful to create web applications using EXpress 
+    than standard Nodejs.
+
+>npm i --save-dev dotenv nodemon
+-->dotenv allows us to pull environment variables from dotenv file.
+-->
